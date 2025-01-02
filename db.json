@@ -1,0 +1,157 @@
+{
+  "restaurants": [
+    {
+      "id": "1",
+      "name": "Taste of Elegance",
+      "minPrice": 25,
+      "estimatedDelivery": 45,
+      "photo": "https://www.selmieldoha.com/resourcefiles/homeimages/inside.jpeg?version=12302024105847",
+      "isDeliveryFree": true,
+      "isOpen": false,
+      "distance": 5
+    },
+    {
+      "id": "2",
+      "name": "Aromatic Haven",
+      "minPrice": 30,
+      "estimatedDelivery": 35,
+      "photo": "https://www.piajo-aroma.it/fileadmin/_processed_/3/f/csm_-_Direzione_creativa_video_e_fotografia_Davide_Bischeri-6_c4926ff7c6.jpg",
+      "rating": 4.5,
+      "isDeliveryFree": false,
+      "isOpen": true,
+      "distance": 7
+    },
+    {
+      "id": "3",
+      "name": "Gourmet Corner",
+      "minPrice": 25,
+      "estimatedDelivery": 50,
+      "photo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/e8/95/25/restaurant.jpg?w=900&h=500&s=1",
+      "rating": 4.8,
+      "isDeliveryFree": true,
+      "isOpen": true,
+      "distance": 2
+    },
+    {
+      "id": "4",
+      "name": "Cozy Spot",
+      "minPrice": 25,
+      "estimatedDelivery": 40,
+      "photo": "https://www.caterermiddleeast.com/2021/05/E5rXQ6Ir-3-6.jpg",
+      "rating": 4.6,
+      "isDeliveryFree": true,
+      "isOpen": true,
+      "distance": 9
+    },
+    {
+      "id": "5",
+      "name": "Savor Delight",
+      "minPrice": 50,
+      "estimatedDelivery": 55,
+      "photo": "https://media.cntraveller.com/photos/66bb77004e7ed8d98ae7d3ff/3:2/w_1599,h_1066,c_limit/josephine1-french%20restaurant%20london-jul24-pr-sam%20harris-global.jpg",
+      "rating": 4.9,
+      "isDeliveryFree": false,
+      "isOpen": false,
+      "distance": 11
+    },
+    {
+      "id": "6",
+      "name": "Flavors of Provence",
+      "minPrice": 40,
+      "estimatedDelivery": 40,
+      "photo": "https://plus.unsplash.com/premium_photo-1661883237884-263e8de8869b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D",
+      "rating": 4.4,
+      "isDeliveryFree": false,
+      "isOpen": false,
+      "distance": 1
+    },
+    {
+      "id": "7",
+      "name": "Healthy Station",
+      "minPrice": 35,
+      "estimatedDelivery": 50,
+      "photo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/3b/ac/a6/light-filled-and-open.jpg?w=600&h=-1&s=1",
+      "rating": 4.6,
+      "isDeliveryFree": true,
+      "isOpen": true,
+      "distance": 2
+    },
+    {
+      "id": "8",
+      "name": "Spiced Delicacies",
+      "minPrice": 35,
+      "estimatedDelivery": 45,
+      "photo": "https://denverspiceroom.com/wp-content/uploads/2023/02/PXL_20220810_193116361-01-01-1-1.jpg",
+      "rating": 4.7,
+      "isDeliveryFree": true,
+      "isOpen": true,
+      "distance": 11
+    },
+    {
+      "id": "9",
+      "name": "Culinary Atelier",
+      "minPrice": 40,
+      "estimatedDelivery": 35,
+      "photo": "https://oo-foodielicious.com/wp-content/uploads/2022/12/Rowan-Parsley-Food-Atelier-Brunch-Review-Collage-1.jpg",
+      "rating": 4.8,
+      "isOpen": true,
+      "isDeliveryFree": false,
+      "distance": 3
+    },
+    {
+      "id": "10",
+      "name": "Anatolian Feast",
+      "minPrice": 30,
+      "estimatedDelivery": 50,
+      "photo": "https://obrukmuseumhotel.com/_image?href=%2Fassets%2Fsev.webp&f=webp",
+      "rating": 4.6,
+      "isOpen": true,
+      "isDeliveryFree": true,
+      "distance": 7
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "title": "Grilled Salmon",
+      "desc": "Freshly grilled salmon served with seasonal vegetables.",
+      "category": "Seafood",
+      "price": 30,
+      "rating": 4.8,
+      "photo": "https://www.pccmarkets.com/wp-content/uploads/2017/08/pcc-rosemary-grilled-salmon-flo.jpg",
+      "restaurantId": "1",
+      "isPopular": true
+    },
+    {
+      "id": "2",
+      "title": "Margarita Pizza",
+      "desc": "Classic thin-crust pizza with mozzarella, tomato sauce, and basil.",
+      "category": "Pizza",
+      "price": 20,
+      "rating": 4.5,
+      "photo": "https://www.onceuponachef.com/images/2020/06/Margherita-Pizza-scaled.jpg,
+      "restaurantId": "2"
+    },
+    {
+      "id": "3",
+      "title": "Chicken Kebab",
+      "desc": "Marinated chicken skewers grilled to perfection.",
+      "category": "Grilled",
+      "price": 25,
+      "rating": 4.7,
+      "photo": "https://www.kitchensanctuary.com/wp-content/uploads/2016/04/Honey-Garlic-Chicken-Skewers-square-FS-21.jpg",
+      "restaurantId": "1",
+      "isPopular": true
+    },
+    {
+      "id": "4",
+      "title": "Chocolate Brownie",
+      "desc": "Decadent chocolate brownie served with vanilla ice cream.",
+      "category": "Desserts",
+      "price": 15,
+      "rating": 4.9,
+      "photo": "https://recipesblob.oetker.in/assets/9a89b75f976642dcab8ae407e2f4344e/1272x764/chocolate-brownie.webp",
+      "restaurantId": "3"
+    }
+  ]
+}
