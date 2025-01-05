@@ -1,17 +1,13 @@
-import {
-  applyMiddleware,
-  combineReducers,
-  createReducer,
-} from "@reduxjs/toolkit";
+import { applyMiddleware, combineReducers, createStore } from "redux";
 import cartReducer from "./reducers/cartReducer";
 import restaurantReducer from "./reducers/restaurantReducer";
-import { createStore } from "./../../node_modules/redux/src/createStore";
 import { thunk } from "redux-thunk";
 
-const rootReducers = combineReducers({
+const rootReducer = combineReducers({
   cartReducer,
   restaurantReducer,
 });
 
-const store = createStore(rootReducers, applyMiddleware(thunk));
+const store = createStore(rootReducer, applyMiddleware(thunk));
+
 export default store;

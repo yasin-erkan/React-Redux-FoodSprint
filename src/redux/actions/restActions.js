@@ -1,26 +1,30 @@
-import ActionTypes from "../actionsTypes";
-import api from "./../../api/index";
+import api from "../../api";
+import ActionTypes from "../actionTypes";
 
-//!the function that creates array
+// Synchronous Action Creators
 export const setRestaurant = (payload) => ({
   type: ActionTypes.REST_SUCCESS,
   payload,
 });
 
-// !Asynchronous Thunk Action
-// Unlike synchronous actions, we can send an API request and then send a message to the reducer with dispatch
+// Asynchronous Thunk Action Creator
 export const getRestaurants = () => {
   return async (dispatch) => {
-    // inform'reducer'
+    // Dispatch loading state
     dispatch({ type: ActionTypes.REST_LOADING });
-    // api request
-    api
-      .get("/restaurants")
-      .then((res) => {
-        dispatch({ type: ActionTypes.REST_SUCCESS, payload: res.data });
-      })
-      .catch((err) => {
-        dispatch({ type: ActionTypes.REST_ERROR, payload: err });
-      });
+
+    try {
+      // Make API request
+      const res = await api.get("/restaurants");
+
+      // Dispatch success with data from the API response
+      dispatch({ type: ActionTypes.REST_SUCCESS, payload: res.data });
+    } catch (err) {
+      // Handle error and dispatch failure action
+      const errorMessage = err.response
+        ? err.response.data.message || err.message
+        : "Something went wrong!";
+      dispatch({ type: ActionTypes.REST_ERROR, payload: errorMessage });
+    }
   };
 };
